@@ -101,15 +101,15 @@ const Login = () => {
         placeholder=" Enter your password" required /> 
         
         <div>
-          <div className="form-control  mt-3 text-start ">
-          <label className="cursor-pointer label">
-          <input type="checkbox" name='login_checked' className="checkbox checkbox-info "  />
-          <span className="label-text ml-3  font-semibold">Remember me</span>
+          <div className="form-control  mt-3   ">
+          <label className="cursor-pointer label justify-start gap-2 items-center ">
+          <input type="checkbox" name='login_checked' className="checkbox checkbox-info w-4 h-4 "  />
+          <span className="label-text   font-semibold">Remember me</span>
           </label>
           </div>
             
             <div className='float-left mt-3'>
-              <input value={'Login'} type='submit' className='btn bg-sky-600 text-neutral-100 px-4 py-2 rounded-md hover:bg-sky-800'/> 
+              <input value={'Login'} type='submit' className='  bg-sky-600 border-none text-neutral-100 px-4 py-2 rounded-md hover:bg-sky-800'/> 
               <Link to={'/'} className='text-blue-500'> Forgot your password ?  </Link>
             </div>
 

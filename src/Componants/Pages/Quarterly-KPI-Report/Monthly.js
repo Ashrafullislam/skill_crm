@@ -1,12 +1,12 @@
 import React from 'react';
 
-const KpiDaily = () => {
+const Monthly = () => {
     return (
         <div>
-            <h2> KPI Daily Report </h2>
+            <h2> Monthly Report</h2>
             
         </div>
     );
 };
 
-export default KpiDaily;
+export default Monthly;

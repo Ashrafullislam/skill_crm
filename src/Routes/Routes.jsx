@@ -3,10 +3,11 @@ import Login from "../Componants/Pages/Register/Login";
 import QuarterlyReport from "../Componants/Pages/Quarterly-KPI-Report/QuarterlyReport";
 import MyFollowup from "../Componants/Pages/Quarterly-KPI-Report/MyFollowup";
 import AllLeads from "../Componants/Pages/Quarterly-KPI-Report/AllLeads";
-import KpiQuarterly from "../Componants/Pages/Quarterly-KPI-Report/KpiQuarterly";
-import KpiMonthly from "../Componants/Pages/Quarterly-KPI-Report/KpiMonthly";
-import KpiDaily from "../Componants/Pages/Quarterly-KPI-Report/KpiDaily";
-import KpiImports from "../Componants/Pages/Quarterly-KPI-Report/KpiImports";
+import Quarterly from "../Componants/Pages/Quarterly-KPI-Report/Quarterly";
+import Monthly from "../Componants/Pages/Quarterly-KPI-Report/Monthly";
+import Daily from "../Componants/Pages/Quarterly-KPI-Report/Daily";
+import Imports from "../Componants/Pages/Quarterly-KPI-Report/Imports";
+
 
 const router = createBrowserRouter([
     {
@@ -33,19 +34,19 @@ const router = createBrowserRouter([
             },
             {
                 path: '/quarterly-report/kpi-quarterly',
-                element:<KpiQuarterly> </KpiQuarterly>
+                element:<Quarterly> </Quarterly>
             },
             {
                 path: '/quarterly-report/kpi-monthly',
-                element: <KpiMonthly> </KpiMonthly>
+                element: <Monthly> </Monthly>
             },
             {
                 path: '/quarterly-report/kpi-daily',
-                element: <KpiDaily> </KpiDaily>
+                element: <Daily> </Daily>
             },
             {
                 path: '/quarterly-report/kpi-imports',
-                element: <KpiImports> </KpiImports>
+                element: <Imports> </Imports>
             }
         ]
     },

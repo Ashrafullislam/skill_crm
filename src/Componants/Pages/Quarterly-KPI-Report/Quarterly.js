@@ -1,12 +1,12 @@
 import React from 'react';
 
-const KpiMonthly = () => {
+const Quarterly = () => {
     return (
         <div>
-            <h2> Monthly Report</h2>
+            <h2> Quarterly </h2>
             
         </div>
     );
 };
 
-export default KpiMonthly;
+export default Quarterly;

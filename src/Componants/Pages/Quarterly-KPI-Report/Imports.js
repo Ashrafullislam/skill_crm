@@ -1,6 +1,6 @@
 import React from 'react';
 
-const KpiImports = () => {
+const Imports = () => {
     return (
         <div>
             <h2> KPI Imports </h2>
@@ -8,4 +8,4 @@ const KpiImports = () => {
     );
 };
 
-export default KpiImports;
+export default Imports;

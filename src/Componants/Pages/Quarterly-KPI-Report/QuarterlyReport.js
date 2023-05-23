@@ -4,7 +4,7 @@ import { Outlet } from 'react-router';
 
 const QuarterlyReport = () => {
     return (
-        <div className=''>
+        <div className='w-3/4 mx-auto'>
         <QuarterlyHeader> </QuarterlyHeader>  
          <Outlet> </Outlet>          
         </div>

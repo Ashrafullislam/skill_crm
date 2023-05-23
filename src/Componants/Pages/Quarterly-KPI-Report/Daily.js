@@ -1,11 +1,12 @@
 import React from 'react';
 
-const AllLeads = () => {
+const Daily = () => {
     return (
         <div className='w-full mx-auto'>
-            <h2> All Leads </h2>
+            <h2> KPI Daily Report </h2>
+            
         </div>
     );
 };
 
-export default AllLeads;
+export default Daily;

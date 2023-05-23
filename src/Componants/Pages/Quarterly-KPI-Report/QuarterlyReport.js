@@ -1,10 +1,12 @@
 import React from 'react';
 import QuarterlyHeader from './QuarterlyHeader';
+import { Outlet } from 'react-router';
 
 const QuarterlyReport = () => {
     return (
-        <div>
-        <QuarterlyHeader> </QuarterlyHeader>            
+        <div className=''>
+        <QuarterlyHeader> </QuarterlyHeader>  
+         <Outlet> </Outlet>          
         </div>
     );
 };

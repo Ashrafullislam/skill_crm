@@ -2,6 +2,11 @@
   text-align: center;
 }
 
+.active{
+  background-color: rgb(15, 147, 199);
+  color: white;
+  
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;

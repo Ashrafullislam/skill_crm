@@ -1,6 +1,6 @@
 import React from 'react';
 
-const MyFollowup = () => {
+const MyFollowupPerformance = () => {
     return (
     <div className='w-full mx-auto mt-5'>
       {/* Quarterly KPI Report table start here  */}
@@ -41,13 +41,13 @@ const MyFollowup = () => {
               </tr>
               {/* row 3 */}
               <tr className='border'>
-                <th className=' bg-gray-200 border border-r-slate-300 '> </th>
+                <th className=' bg-gray-200 border border-r-slate-300 rounded-none'> </th>
                 <td className=' bg-gray-200 border border-slate-300'> Efficiency </td>
                 <td className=' bg-gray-200 border border-slate-300 '> 0%</td>
                 <td className=' bg-gray-200 border border-slate-300'> 0% </td>
                 <td className=' bg-gray-200 border border-slate-300 text-slate-900'> 0% </td>
                 <td className=' bg-gray-200 border border-slate-300 text-slate-900'> 0%  </td>
-                <td className=' bg-gray-200 border  text-slate-900'>  </td>
+                <td className=' bg-gray-200 border  text-slate-900 rounded-none'>  </td>
               </tr>
               
             </tbody>
@@ -58,4 +58,4 @@ const MyFollowup = () => {
     );
 };
 
-export default MyFollowup;
+export default MyFollowupPerformance;

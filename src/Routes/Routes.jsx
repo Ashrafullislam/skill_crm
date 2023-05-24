@@ -1,12 +1,15 @@
 import { createBrowserRouter } from "react-router-dom";
 import Login from "../Componants/Pages/Register/Login";
-import QuarterlyReport from "../Componants/Pages/Quarterly-KPI-Report/QuarterlyReport";
-import MyFollowup from "../Componants/Pages/Quarterly-KPI-Report/MyFollowup";
-import AllLeads from "../Componants/Pages/Quarterly-KPI-Report/AllLeads";
-import Quarterly from "../Componants/Pages/Quarterly-KPI-Report/Quarterly";
-import Monthly from "../Componants/Pages/Quarterly-KPI-Report/Monthly";
-import Daily from "../Componants/Pages/Quarterly-KPI-Report/Daily";
-import Imports from "../Componants/Pages/Quarterly-KPI-Report/Imports";
+import AllLeadsMain from "../Componants/Pages/All_Leads/AllLeadsMain";
+import MyFollowUpAllLeads from "../Componants/Pages/All_Leads/MyFollowUpAllLeads";
+import MyFollowupPerformance from "../Componants/Pages/HomePageDashboard/MyFollowupPerformance";
+import HomePageDashboard from "../Componants/Pages/HomePageDashboard/HomePageDashboard";
+import Quarterly from "../Componants/Pages/HomePageDashboard/Quarterly";
+import Monthly from "../Componants/Pages/HomePageDashboard/Monthly";
+import Daily from "../Componants/Pages/HomePageDashboard/Daily";
+import Imports from "../Componants/Pages/HomePageDashboard/Imports";
+import AllLeads from "../Componants/Pages/All_Leads/AllLeads";
+import Signup from "../Componants/Pages/Register/Signup";
 
 
 const router = createBrowserRouter([
@@ -18,39 +21,55 @@ const router = createBrowserRouter([
         path:'/login',
         element: <Login> </Login>
     },
+    {
+        path: '/signup',
+        element: <Signup> </Signup>
+    },
 
     // Quarterly-KPI-Report Main Page 
     {
-        path:  '/quarterly-report',
-        element: <QuarterlyReport>  </QuarterlyReport>,
+        path:  '/homepage-dashboard',
+        element: <HomePageDashboard> </HomePageDashboard>, 
         children:[
             {
-                path: '/quarterly-report/my-followup',
-                element:<MyFollowup> </MyFollowup>
+                path: '/homepage-dashboard/my-followup-performance',
+                element:<MyFollowupPerformance> </MyFollowupPerformance>
+            },
+           
+            {
+                path: '/homepage-dashboard/kpi-quarterly',
+                element: <Quarterly> </Quarterly>
             },
             {
-                path: '/quarterly-report/all-leads',
-                element:<AllLeads> </AllLeads>
-            },
-            {
-                path: '/quarterly-report/kpi-quarterly',
-                element:<Quarterly> </Quarterly>
-            },
-            {
-                path: '/quarterly-report/kpi-monthly',
+                path: '/homepage-dashboard/kpi-monthly',
                 element: <Monthly> </Monthly>
             },
             {
-                path: '/quarterly-report/kpi-daily',
+                path: '/homepage-dashboard/kpi-daily',
                 element: <Daily> </Daily>
             },
             {
-                path: '/quarterly-report/kpi-imports',
-                element: <Imports> </Imports>
+                path: '/homepage-dashboard/kpi-imports',
+                element: <Imports >  </Imports>
             }
         ]
     },
-   
+    // All Leads Home and Total Leads Showing page 
+    {
+        path:  '/all-leads',
+        element:  <AllLeadsMain> </AllLeadsMain>,
+        children: [
+            {
+                path: '/all-leads/my-followup',
+                element: <MyFollowUpAllLeads>  </MyFollowUpAllLeads>
+            },
+            {
+                path: '/all-leads/all-leads-data',
+                element: <AllLeads> </AllLeads>
+            }
+        ]
+
+    },
 
     {
         path:'*',

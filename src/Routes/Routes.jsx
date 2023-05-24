@@ -1,7 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import Login from "../Componants/Pages/Register/Login";
 import AllLeadsMain from "../Componants/Pages/All_Leads/AllLeadsMain";
-import MyFollowUpAllLeads from "../Componants/Pages/All_Leads/MyFollowUpAllLeads";
+import MyFollowUpAllLeads from "../Componants/Pages/All_Leads/MyFollowUp";
 import MyFollowupPerformance from "../Componants/Pages/HomePageDashboard/MyFollowupPerformance";
 import HomePageDashboard from "../Componants/Pages/HomePageDashboard/HomePageDashboard";
 import Quarterly from "../Componants/Pages/HomePageDashboard/Quarterly";

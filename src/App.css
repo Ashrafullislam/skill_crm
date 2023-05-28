@@ -41,3 +41,7 @@
     transform: rotate(360deg);
   }
 }
+.regplane:hover{
+  transition: all linear;
+  transform: scale(1.5);
+}

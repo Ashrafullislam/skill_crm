@@ -5,7 +5,7 @@ import HomeDashboardHeader from './HomeDashboardHeader';
 const HomePageDashboard = () => {
     return (
         <div className='w-4/5 mx-auto'>
-        <HomeDashboardHeader> </HomeDashboardHeader>
+      <HomeDashboardHeader> </HomeDashboardHeader>
          <Outlet> </Outlet>          
         </div>
     );
